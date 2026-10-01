@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Steam: цены UAH|RUB|KZT с флагами
+// @name         SteamPricesViaTampermonkey
 // @namespace    uah2rub
 // @version      2.0.0
 // @description  Показывает цены в гривнах, рублях и тенге; поддержка ₴, ₽ и ₸; переключатели валют (кнопки на странице и меню Tampermonkey); кэш курсов на 24 часа.
@@ -110,7 +110,7 @@
 
         '.' + SEP_CLASS + '{opacity:.5;margin:0 .35em;}' +
 
-        '#' + PANEL_ID + '{position:fixed;right:12px;bottom:12px;z-index:2147483647;display:flex;gap:4px;opacity:.92;}' +
+        '#' + PANEL_ID + '{position:fixed;right:12px;bottom:12px;z-index:2147483647;display:flex;flex-direction:column;align-items:flex-end;gap:4px;opacity:.92;}' +
         '#' + PANEL_ID + ' button{min-width:34px;height:28px;border-radius:6px;border:1px solid rgba(255,255,255,.35);' +
         'background:rgba(0,0,0,.65);color:#fff;font-size:14px;line-height:1;cursor:pointer;padding:0 6px;}' +
         '#' + PANEL_ID + ' button.on{outline:2px solid #4fc3f7;background:rgba(0,0,0,.8);}' +
